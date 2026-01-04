@@ -27,6 +27,13 @@ Optimal results can be obtained when utilizing a TCRT1000 reflective optical sen
 
 **Figure 3.** Converting a TCST110 transmissive optical sensor into a PPG reflective sensor. 
 
+<p align="center">
+  <img width="738" height="396" alt="TCST110 Adaptation" src="https://github.com/user-attachments/assets/7f8758af-24e6-4950-bf67-3b03b2d71155" />
+  <br>
+  <strong>Figure 3.</strong> <em>Converting a TCST110 transmissive optical sensor into a PPG reflective sensor.</em>
+</p>
+
+
 Real-time PVC detection (Arduino): This code works in conjunction with an Arduino UNO board and a MAX30102 High-Sensitivity Pulse Oximeter and Heart Rate sensor (see Figure 4) to provide real-time detection of PVCs: [Acá colocarás el enlace del código que lleva por nombre “Alpinista_4_CVP3_MAX.ino”]. 
 
 <img width="714" height="577" alt="Conection MAX30102   Buzzer" src="https://github.com/user-attachments/assets/921f35b2-a32d-4642-a277-f26c343dfd98" />

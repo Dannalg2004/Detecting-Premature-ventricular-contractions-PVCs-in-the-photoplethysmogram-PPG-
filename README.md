@@ -3,9 +3,11 @@ Premature ventricular contractions (PVCs), also known as premature ventricular c
 What do PVCs look like?
 On the electrocardiogram (black trace), a PVC appears as a wide, often tall, and bizarre QRS complex (see Figure 1), always followed by a longer RR interval known as the “compensatory pause.” On the photoplethysmogram (blue trace), a PVC may appear as either a missing pulse (type 1 PVC) or a premature low-amplitude pulse (type 2 PVC).
 
-[PVC_Dectection_PPG_Fig_01.tif](https://github.com/user-attachments/files/24417296/PVC_Dectection_PPG_Fig_01.tif)
-
-**Figure 1.** The typical appearance of a premature ventricular contraction (PVC) on the electrocardiogram (ECG) and the photoplethysmogram (PPG).
+<p align="center">
+  <img src="https://github.com/user-attachments/files/24419503/PVC_Dectection_PPG_Fig_01.tif" width="500">
+  <br>
+  <strong>Figure 1.</strong> <em>The typical appearance of a premature ventricular contraction (PVC) on the electrocardiogram (ECG) and the photoplethysmogram (PPG).</em>
+</p>
 
 # ***Why is it important to detect PVCs in PPG waveforms?***
 PVCs interrupt diastolic ventricular filling, thereby decreasing stroke volume and cardiac output [4]. Therefore, the corresponding arterial pulse may be too weak to be detected by photoplethysmography (PPG)-based pulse monitors, which are the most commonly owned by the general population. Pulse under-detection can falsely appear as bradycardia, triggering unnecessary healthcare provision and causing anxiety to the patient [1, 5]. Here, we provide an open-source code for detecting PVCs in PPG signals to reduce pseudo-bradycardia alarms. Initially developed for offline PVC detection, our proposed rule-based method has now been adapted to real-time operation. 
@@ -17,15 +19,13 @@ Here the link of the codes for online detection (MATLAB and Arduino).
 Offline PVC detection: Before using this code [Acá colocarás el enlace de la función que lleva por nombre “Alpinista_simple_4_CVP7_opt.m”], you need to upload the PPG and ECG signals of the MIMIC recordings into the MATLAB Workspace. Use the .docx annotation file to identify the beginning and the end of every PPG segment and smooth it by applying a Savitzky-Golay finite impulse response (FIR) filter with a polynomial order of 5 and a frame length of 15. Note that fs = 125 Hz. You’ll see the results printed on MATLAB’s Command Window.
 Real-time PVC detection (MATLAB): The following code can provide you with average (every 10 seconds) and instant (every heartbeat) heart rate, also detecting PVCs in real time: [Acá colocarás el enlace del código que lleva por nombre “Alpinista_simple_4_CVP7_onine.m”]. This code works in conjunction with an Arduino UNO board and a homemade PPG circuit (see Figure 2). Verify that the COM port and baud rate match those you use to configure and connect the Arduino board [Acá colocarás el enlace del código que lleva por nombre “sketch_sep22a.ino”]. You’ll see the results printed on MATLAB’s Command Window.
 
-[Circuito_PPG_Mejorado.tif](https://github.com/user-attachments/files/24419320/Circuito_PPG_Mejorado.tif)
-
-**Figure 2.** A two-stage PPG analog circuit (adapted from: https://embedded-lab.com/blog/introducing-easy-pulse-a-diy-photoplethysmographic-sensor-for-measuring-heart-rate/). 
+<p align="center">
+  <img src="https://github.com/user-attachments/files/24419507/Circuito_PPG_Mejorado.tif" width="500">
+  <br>
+  <strong>Figure 2.</strong> <em>A two-stage PPG analog circuit (adapted from: https://embedded-lab.com/blog/introducing-easy-pulse-a-diy-photoplethysmographic-sensor-for-measuring-heart-rate/).</em>
+</p>
 
 Optimal results can be obtained when utilizing a TCRT1000 reflective optical sensor. However, you can also adapt a TCST110 optical sensor as shown in Figure 3.
-
-<img width="738" height="396" alt="TCST110 Adaptation" src="https://github.com/user-attachments/assets/7f8758af-24e6-4950-bf67-3b03b2d71155" />
-
-**Figure 3.** Converting a TCST110 transmissive optical sensor into a PPG reflective sensor. 
 
 <p align="center">
   <img width="738" height="396" alt="TCST110 Adaptation" src="https://github.com/user-attachments/assets/7f8758af-24e6-4950-bf67-3b03b2d71155" />
@@ -36,13 +36,22 @@ Optimal results can be obtained when utilizing a TCRT1000 reflective optical sen
 
 Real-time PVC detection (Arduino): This code works in conjunction with an Arduino UNO board and a MAX30102 High-Sensitivity Pulse Oximeter and Heart Rate sensor (see Figure 4) to provide real-time detection of PVCs: [Acá colocarás el enlace del código que lleva por nombre “Alpinista_4_CVP3_MAX.ino”]. 
 
-<img width="714" height="577" alt="Conection MAX30102   Buzzer" src="https://github.com/user-attachments/assets/921f35b2-a32d-4642-a277-f26c343dfd98" />
+<p align="center">
+  <img width="714" height="577" alt="Connection MAX30102 Buzzer" src="https://github.com/user-attachments/assets/921f35b2-a32d-4642-a277-f26c343dfd98" />
+  <br>
+  <strong>Figure 4.</strong> <em>Circuitry schematic of the real-time PVC detector. The Arduino UNO microcontroller supplies +5V to a MAX30102 reflective PPG sensor (red line). The MAX30102 sensor’s serial data (SDA) line was connected to the microcontroller’s A4 pin (green line), whereas the SCL (serial clock) pin was wired to the microcontroller’s A5 pin (blue line). Finally, the MAX30102 module’s ground (GND) pin was connected to the Arduino UNO board’s GND pin (black line).</em>
+</p>
 
-**Figure 4.** Circuitry schematic of the real-time PVC detector. The Arduino UNO microcontroller supplies +5V to a MAX30102 reflective PPG sensor (red line). The MAX30102 sensor’s serial data (SDA) line was connected to the microcontroller’s A4 pin (green line), whereas the SCL (serial clock) pin was wired to the microcontroller’s A5 pin (blue line). Finally, the MAX30102 module’s ground (GND) pin was connected to the Arduino UNO board's GND pin (black line).
 
 The piezoelectric buzzer wired to the 10-pin of the microcontroller delivers a 3 kHz tone with every detected PVC, as shown in the following video:
 
-https://github.com/user-attachments/assets/88ac73e1-0cc8-44ef-8f66-34afcb60c5b6
+<p align="center">
+  <video width="600" controls>
+    <source src="https://github.com/user-attachments/assets/88ac73e1-0cc8-44ef-8f66-34afcb60c5b6" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</p>
+
 
 **When using this resource, please cite the associated study, which is currently under review and is available at:** [Enlace del artículo]
 How to cite: [Esto te lo paso después].

@@ -45,9 +45,13 @@ Real-time PVC detection (Arduino): This code works in conjunction with an Arduin
 
 The piezoelectric buzzer wired to the 10-pin of the microcontroller delivers a 3 kHz tone with every detected PVC, as shown in the following video:
 
+
+
+https://github.com/user-attachments/assets/612c87d3-5832-4637-a96f-ad16b39368b2
+
 <p align="center">
   <video width="600" controls>
-    <source src="https://github.com/user-attachments/assets/88ac73e1-0cc8-44ef-8f66-34afcb60c5b6" type="video/mp4">
+    <source src="https://github.com/user-attachments/assets/612c87d3-5832-4637-a96f-ad16b39368b2" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </p>

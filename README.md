@@ -1,12 +1,13 @@
 # ***What is a PVC?***
 Premature ventricular contractions (PVCs), also known as premature ventricular complexes or ventricular extrasystoles, are early ventricular contractions due to focal electrical impulses originating from the Purkinje fibers rather than the sinoatrial (SA) node [1]. Depending on their occurrence rate, their clinical relevance ranges from completely innocuous to the development of cardiomyopathy and heart failure [2, 3].
-What do PVCs look like?
+
+# ***What do PVCs look like?***
 On the electrocardiogram (black trace), a PVC appears as a wide, often tall, and bizarre QRS complex (see Figure 1), always followed by a longer RR interval known as the “compensatory pause.” On the photoplethysmogram (blue trace), a PVC may appear as either a missing pulse (type 1 PVC) or a premature low-amplitude pulse (type 2 PVC).
 
 <p align="center">
-  <img src="https://github.com/user-attachments/files/24419503/PVC_Dectection_PPG_Fig_01.tif" width="500">
+  <img width="1209" height="627" alt="PVC_Dectection_PPG_Fig_01" src="https://github.com/user-attachments/assets/8a7a83a8-ca27-4f1e-b26d-5e570c856c83" />
   <br>
-  <strong>Figure 1.</strong> <em>The typical appearance of a premature ventricular contraction (PVC) on the electrocardiogram (ECG) and the photoplethysmogram (PPG).</em>
+  <strong>**Figure 1.**</strong> <em>The typical appearance of a premature ventricular contraction (PVC) on the electrocardiogram (ECG) and the photoplethysmogram (PPG).</em>
 </p>
 
 # ***Why is it important to detect PVCs in PPG waveforms?***
@@ -20,9 +21,9 @@ Offline PVC detection: Before using this code [Acá colocarás el enlace de la f
 Real-time PVC detection (MATLAB): The following code can provide you with average (every 10 seconds) and instant (every heartbeat) heart rate, also detecting PVCs in real time: [Acá colocarás el enlace del código que lleva por nombre “Alpinista_simple_4_CVP7_onine.m”]. This code works in conjunction with an Arduino UNO board and a homemade PPG circuit (see Figure 2). Verify that the COM port and baud rate match those you use to configure and connect the Arduino board [Acá colocarás el enlace del código que lleva por nombre “sketch_sep22a.ino”]. You’ll see the results printed on MATLAB’s Command Window.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/files/24419507/Circuito_PPG_Mejorado.tif" width="500">
+  <img width="923" height="519" alt="Circuito_PPG_Mejorado" src="https://github.com/user-attachments/assets/7ae9ca93-f025-4e61-bda5-ecd914bd2a7a" />
   <br>
-  <strong>Figure 2.</strong> <em>A two-stage PPG analog circuit (adapted from: https://embedded-lab.com/blog/introducing-easy-pulse-a-diy-photoplethysmographic-sensor-for-measuring-heart-rate/).</em>
+  <strong>**Figure 2.**</strong> <em>A two-stage PPG analog circuit (adapted from: https://embedded-lab.com/blog/introducing-easy-pulse-a-diy-photoplethysmographic-sensor-for-measuring-heart-rate/).</em>
 </p>
 
 Optimal results can be obtained when utilizing a TCRT1000 reflective optical sensor. However, you can also adapt a TCST110 optical sensor as shown in Figure 3.

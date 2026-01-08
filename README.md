@@ -7,7 +7,7 @@ On the electrocardiogram (black trace), a PVC appears as a wide, often tall, and
 <p align="center">
   <img width="1209" height="627" alt="PVC_Dectection_PPG_Fig_01" src="https://github.com/user-attachments/assets/8a7a83a8-ca27-4f1e-b26d-5e570c856c83" />
   <br>
-  <strong>**Figure 1.**</strong> <em>The typical appearance of a premature ventricular contraction (PVC) on the electrocardiogram (ECG) and the photoplethysmogram (PPG).</em>
+  <strong>Figure 1.</strong> <em>The typical appearance of a premature ventricular contraction (PVC) on the electrocardiogram (ECG) and the photoplethysmogram (PPG).</em>
 </p>
 
 # ***Why is it important to detect PVCs in PPG waveforms?***
@@ -23,7 +23,7 @@ Real-time PVC detection (MATLAB): The following code can provide you with averag
 <p align="center">
   <img width="923" height="519" alt="Circuito_PPG_Mejorado" src="https://github.com/user-attachments/assets/7ae9ca93-f025-4e61-bda5-ecd914bd2a7a" />
   <br>
-  <strong>**Figure 2.**</strong> <em>A two-stage PPG analog circuit (adapted from: https://embedded-lab.com/blog/introducing-easy-pulse-a-diy-photoplethysmographic-sensor-for-measuring-heart-rate/).</em>
+  <strong>Figure 2.</strong> <em>A two-stage PPG analog circuit (adapted from: https://embedded-lab.com/blog/introducing-easy-pulse-a-diy-photoplethysmographic-sensor-for-measuring-heart-rate/).</em>
 </p>
 
 Optimal results can be obtained when utilizing a TCRT1000 reflective optical sensor. However, you can also adapt a TCST110 optical sensor as shown in Figure 3.

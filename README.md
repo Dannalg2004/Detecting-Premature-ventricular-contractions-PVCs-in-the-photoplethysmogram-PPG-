@@ -13,14 +13,15 @@ On the electrocardiogram (black trace), a PVC appears as a wide, often tall, and
 # ***Why is it important to detect PVCs in PPG waveforms?***
 PVCs interrupt diastolic ventricular filling, thereby decreasing stroke volume and cardiac output [4]. Therefore, the corresponding arterial pulse may be too weak to be detected by photoplethysmography (PPG)-based pulse monitors, which are the most commonly owned by the general population. Pulse under-detection can falsely appear as bradycardia, triggering unnecessary healthcare provision and causing anxiety to the patient [1, 5]. Here, we provide an open-source code for detecting PVCs in PPG signals to reduce pseudo-bradycardia alarms. Initially developed for offline PVC detection, our proposed rule-based method has now been adapted to real-time operation. 
 
-PVC types 1 and 2 were visually identified in high-quality PPG waveforms of ten selected recordings from the multiparameter intelligent monitoring in intensive care (MIMIC) database using the synchronously recorded electrocardiograms (ECG) [6]. A .docx file with manual annotations identifying the type of PVCs and the corresponding time instants at which they occur in these recordings can be downloaded from here: [Project report (Google Docs)](https://docs.google.com/document/d/19UcAYbughqKzRng29dkVUVR2Kz3p8MBg/edit)
+PVC types 1 and 2 were visually identified in high-quality PPG waveforms of ten selected recordings from the multiparameter intelligent monitoring in intensive care (MIMIC) database using the synchronously recorded electrocardiograms (ECG) [6]. A .docx file with manual annotations identifying the type of PVCs and the corresponding time instants at which they occur in these recordings can be downloaded from here: [Formato Anotaciones CVPs](https://docs.google.com/document/d/19UcAYbughqKzRng29dkVUVR2Kz3p8MBg/edit)
+
 Please remember to cite the original study [6] when using this dataset.
 
 # ***Access the codes***
 Here the link of the codes for online detection (MATLAB and Arduino).
-Offline PVC detection: Before using this code (https://drive.google.com/file/d/1BxTrkrCFn-aueQ7k8dVo_Vh4eKqhuFMO/view?usp=drive_link), you need to upload the PPG and ECG signals of the MIMIC recordings into the MATLAB Workspace. Use the .docx annotation file to identify the beginning and the end of every PPG segment and smooth it by applying a Savitzky-Golay finite impulse response (FIR) filter with a polynomial order of 5 and a frame length of 15. Note that fs = 125 Hz. You’ll see the results printed on MATLAB’s Command Window.
+Offline PVC detection: Before using this code [Alpinista_Simple_4_CVP7_opt](https://drive.google.com/file/d/1BxTrkrCFn-aueQ7k8dVo_Vh4eKqhuFMO/view), you need to upload the PPG and ECG signals of the MIMIC recordings into the MATLAB Workspace. Use the .docx annotation file to identify the beginning and the end of every PPG segment and smooth it by applying a Savitzky-Golay finite impulse response (FIR) filter with a polynomial order of 5 and a frame length of 15. Note that fs = 125 Hz. You’ll see the results printed on MATLAB’s Command Window.
 
-Real-time PVC detection (MATLAB): The following code can provide you with average (every 10 seconds) and instant (every heartbeat) heart rate, also detecting PVCs in real time: https://drive.google.com/file/d/1YNe157gDxzLewTEy6Oi6uCCtF5CMmNFC/view?usp=drive_link. This code works in conjunction with an Arduino UNO board and a homemade PPG circuit (see Figure 2). Verify that the COM port and baud rate match those you use to configure and connect the Arduino board (https://drive.google.com/file/d/1RFf4OijW5zHnQ8XXn5dQ3dpJ2XSBEZ6E/view?usp=drive_link). You’ll see the results printed on MATLAB’s Command Window.
+Real-time PVC detection (MATLAB): The following code can provide you with average (every 10 seconds) and instant (every heartbeat) heart rate, also detecting PVCs in real time: [Alpinista_simple_4_CVP7_online](https://drive.google.com/file/d/1YNe157gDxzLewTEy6Oi6uCCtF5CMmNFC/view). This code works in conjunction with an Arduino UNO board and a homemade PPG circuit (see Figure 2). Verify that the COM port and baud rate match those you use to configure and connect the Arduino board [Sketch_sep22a.ino](https://drive.google.com/file/d/1RFf4OijW5zHnQ8XXn5dQ3dpJ2XSBEZ6E/view). You’ll see the results printed on MATLAB’s Command Window.
 
 <p align="center">
   <img width="923" height="519" alt="Circuito_PPG_Mejorado" src="https://github.com/user-attachments/assets/7ae9ca93-f025-4e61-bda5-ecd914bd2a7a" />
@@ -37,7 +38,7 @@ Optimal results can be obtained when utilizing a TCRT1000 reflective optical sen
 </p>
 
 
-Real-time PVC detection (Arduino): This code works in conjunction with an Arduino UNO board and a MAX30102 High-Sensitivity Pulse Oximeter and Heart Rate sensor (see Figure 4) to provide real-time detection of PVCs: https://drive.google.com/file/d/1fdaf9z1fIm2eBkvDZgJxihv-ZNYfrV0c/view?usp=drive_link.
+Real-time PVC detection (Arduino): This code works in conjunction with an Arduino UNO board and a MAX30102 High-Sensitivity Pulse Oximeter and Heart Rate sensor (see Figure 4) to provide real-time detection of PVCs: [Alpinista_4_CVP3_MAX.ino](https://drive.google.com/file/d/1fdaf9z1fIm2eBkvDZgJxihv-ZNYfrV0c/view).
 
 
 <p align="center">

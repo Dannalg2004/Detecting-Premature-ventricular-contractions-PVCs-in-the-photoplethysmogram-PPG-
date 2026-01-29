@@ -13,9 +13,7 @@
 # ***Why is it important to detect PVCs in PPG waveforms?***
 <p align="justify">PVCs interrupt diastolic ventricular filling, thereby decreasing stroke volume and cardiac output [4]. Therefore, the corresponding arterial pulse may be too weak to be detected by photoplethysmography (PPG)-based pulse monitors, which are the most commonly owned by the general population. Pulse under-detection can falsely appear as bradycardia, triggering unnecessary healthcare provision and causing anxiety to the patient [1, 5]. Here, we provide an open-source code for detecting PVCs in PPG signals to reduce pseudo-bradycardia alarms. Initially developed for offline PVC detection, our proposed rule-based method has now been adapted to real-time operation.</p>
 
-PVC types 1 and 2 were visually identified in high-quality PPG waveforms of ten selected recordings from the multiparameter intelligent monitoring in intensive care (MIMIC) database using the synchronously recorded electrocardiograms (ECG) [6]. A .docx file with manual annotations identifying the type of PVCs and the corresponding time instants at which they occur in these recordings can be downloaded from here: [Formato Anotaciones CVPs](https://docs.google.com/document/d/19UcAYbughqKzRng29dkVUVR2Kz3p8MBg/edit)
-
-Please remember to cite the original study [6] when using this dataset.
+PVC types 1 and 2 were visually identified in high-quality PPG waveforms of ten selected recordings from the multiparameter intelligent monitoring in intensive care (MIMIC) database using the synchronously recorded electrocardiograms (ECG) [6]. A .docx file with manual annotations identifying the type of PVCs and the corresponding time instants at which they occur in these recordings can be downloaded from here: [Formato Anotaciones CVPs](https://docs.google.com/document/d/19UcAYbughqKzRng29dkVUVR2Kz3p8MBg/edit). Please remember to cite the original study [6] when using this dataset.
 
 # ***Access the codes***
 <p align="justify">Here the link of the codes for online detection (MATLAB and Arduino).</p>
@@ -39,13 +37,13 @@ Optimal results can be obtained when utilizing a TCRT1000 reflective optical sen
 </p>
 
 
-<p align="justify"><u><b>Real-time PVC detection (Arduino)</b></u>: This code works in conjunction with an Arduino UNO board and a MAX30102 High-Sensitivity Pulse Oximeter and Heart Rate sensor (see Figure 4) to provide real-time detection of PVCs: [Alpinista_4_CVP3_MAX.ino](https://drive.google.com/file/d/1fdaf9z1fIm2eBkvDZgJxihv-ZNYfrV0c/view).</p>
+<u><b>Real-time PVC detection (Arduino)</b></u>: This code works in conjunction with an Arduino UNO board and a MAX30102 High-Sensitivity Pulse Oximeter and Heart Rate sensor (see Figure 4) to provide real-time detection of PVCs: [Alpinista_4_CVP3_MAX.ino](https://drive.google.com/file/d/1fdaf9z1fIm2eBkvDZgJxihv-ZNYfrV0c/view).
 
 
 <p align="center">
   <img width="714" height="577" alt="Connection MAX30102 Buzzer" src="https://github.com/user-attachments/assets/921f35b2-a32d-4642-a277-f26c343dfd98" />
   <br>
-  <strong>Figure 4.<p align="justify"></strong> <em>Circuitry schematic of the real-time PVC detector. The Arduino UNO microcontroller supplies +5V to a MAX30102 reflective PPG sensor (red line). The MAX30102 sensor’s serial data (SDA) line was connected to the microcontroller’s A4 pin (green line), whereas the SCL (serial clock) pin was wired to the microcontroller’s A5 pin (blue line). Finally, the MAX30102 module’s ground (GND) pin was connected to the Arduino UNO board’s GND pin (black line).</em></p>
+  <strong>Figure 4.</strong> <em>Circuitry schematic of the real-time PVC detector. The Arduino UNO microcontroller supplies +5V to a MAX30102 reflective PPG sensor (red line). The MAX30102 sensor’s serial data (SDA) line was connected to the microcontroller’s A4 pin (green line), whereas the SCL (serial clock) pin was wired to the microcontroller’s A5 pin (blue line). Finally, the MAX30102 module’s ground (GND) pin was connected to the Arduino UNO board’s GND pin (black line).</em>
 </p>
 
 

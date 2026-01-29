@@ -2,7 +2,7 @@
 <p align="justify">Premature ventricular contractions (PVCs), also known as premature ventricular complexes or ventricular extrasystoles, are early ventricular contractions due to focal electrical impulses originating from the Purkinje fibers rather than the sinoatrial (SA) node [1]. Depending on their occurrence rate, their clinical relevance ranges from completely innocuous to the development of cardiomyopathy and heart failure [2, 3].</p>
 
 # ***What do PVCs look like?***
-On the electrocardiogram (black trace), a PVC appears as a wide, often tall, and bizarre QRS complex (see Figure 1), always followed by a longer RR interval known as the “compensatory pause.” On the photoplethysmogram (blue trace), a PVC may appear as either a missing pulse (type 1 PVC) or a premature low-amplitude pulse (type 2 PVC).
+<p align="justify">On the electrocardiogram (black trace), a PVC appears as a wide, often tall, and bizarre QRS complex (see Figure 1), always followed by a longer RR interval known as the “compensatory pause.” On the photoplethysmogram (blue trace), a PVC may appear as either a missing pulse (type 1 PVC) or a premature low-amplitude pulse (type 2 PVC).</p>
 
 <p align="center">
   <img width="1209" height="627" alt="PVC_Dectection_PPG_Fig_01" src="https://github.com/user-attachments/assets/8a7a83a8-ca27-4f1e-b26d-5e570c856c83" />
@@ -11,18 +11,18 @@ On the electrocardiogram (black trace), a PVC appears as a wide, often tall, and
 </p>
 
 # ***Why is it important to detect PVCs in PPG waveforms?***
-PVCs interrupt diastolic ventricular filling, thereby decreasing stroke volume and cardiac output [4]. Therefore, the corresponding arterial pulse may be too weak to be detected by photoplethysmography (PPG)-based pulse monitors, which are the most commonly owned by the general population. Pulse under-detection can falsely appear as bradycardia, triggering unnecessary healthcare provision and causing anxiety to the patient [1, 5]. Here, we provide an open-source code for detecting PVCs in PPG signals to reduce pseudo-bradycardia alarms. Initially developed for offline PVC detection, our proposed rule-based method has now been adapted to real-time operation. 
+<p align="justify">PVCs interrupt diastolic ventricular filling, thereby decreasing stroke volume and cardiac output [4]. Therefore, the corresponding arterial pulse may be too weak to be detected by photoplethysmography (PPG)-based pulse monitors, which are the most commonly owned by the general population. Pulse under-detection can falsely appear as bradycardia, triggering unnecessary healthcare provision and causing anxiety to the patient [1, 5]. Here, we provide an open-source code for detecting PVCs in PPG signals to reduce pseudo-bradycardia alarms. Initially developed for offline PVC detection, our proposed rule-based method has now been adapted to real-time operation.
 
 PVC types 1 and 2 were visually identified in high-quality PPG waveforms of ten selected recordings from the multiparameter intelligent monitoring in intensive care (MIMIC) database using the synchronously recorded electrocardiograms (ECG) [6]. A .docx file with manual annotations identifying the type of PVCs and the corresponding time instants at which they occur in these recordings can be downloaded from here: [Formato Anotaciones CVPs](https://docs.google.com/document/d/19UcAYbughqKzRng29dkVUVR2Kz3p8MBg/edit)
 
-Please remember to cite the original study [6] when using this dataset.
+Please remember to cite the original study [6] when using this dataset.</p>
 
 # ***Access the codes***
-Here the link of the codes for online detection (MATLAB and Arduino).
+<p align="justify">Here the link of the codes for online detection (MATLAB and Arduino).
 
 <u><b>Offline PVC detection</b></u>: Before using this code [Alpinista_Simple_4_CVP7_opt](https://drive.google.com/file/d/1BxTrkrCFn-aueQ7k8dVo_Vh4eKqhuFMO/view), you need to upload the PPG and ECG signals of the MIMIC recordings into the MATLAB Workspace. Use the .docx annotation file to identify the beginning and the end of every PPG segment and smooth it by applying a Savitzky-Golay finite impulse response (FIR) filter with a polynomial order of 5 and a frame length of 15. Note that fs = 125 Hz. You’ll see the results printed on MATLAB’s Command Window.
 
-<u><b>Real-time PVC detection (MATLAB)</b></u>: The following code can provide you with average (every 10 seconds) and instant (every heartbeat) heart rate, also detecting PVCs in real time: [Alpinista_simple_4_CVP7_online](https://drive.google.com/file/d/1YNe157gDxzLewTEy6Oi6uCCtF5CMmNFC/view). This code works in conjunction with an Arduino UNO board and a homemade PPG circuit (see Figure 2). Verify that the COM port and baud rate match those you use to configure and connect the Arduino board [Sketch_sep22a.ino](https://drive.google.com/file/d/1RFf4OijW5zHnQ8XXn5dQ3dpJ2XSBEZ6E/view). You’ll see the results printed on MATLAB’s Command Window.
+<u><b>Real-time PVC detection (MATLAB)</b></u>: The following code can provide you with average (every 10 seconds) and instant (every heartbeat) heart rate, also detecting PVCs in real time: [Alpinista_simple_4_CVP7_online](https://drive.google.com/file/d/1YNe157gDxzLewTEy6Oi6uCCtF5CMmNFC/view). This code works in conjunction with an Arduino UNO board and a homemade PPG circuit (see Figure 2). Verify that the COM port and baud rate match those you use to configure and connect the Arduino board [Sketch_sep22a.ino](https://drive.google.com/file/d/1RFf4OijW5zHnQ8XXn5dQ3dpJ2XSBEZ6E/view). You’ll see the results printed on MATLAB’s Command Window.</p>
 
 <p align="center">
   <img width="923" height="519" alt="Circuito_PPG_Mejorado" src="https://github.com/user-attachments/assets/7ae9ca93-f025-4e61-bda5-ecd914bd2a7a" />
@@ -49,7 +49,7 @@ Optimal results can be obtained when utilizing a TCRT1000 reflective optical sen
 </p>
 
 
-The piezoelectric buzzer wired to the 10-pin of the microcontroller delivers a 3 kHz tone with every detected PVC, as shown in the following video:
+<p align="justify">The piezoelectric buzzer wired to the 10-pin of the microcontroller delivers a 3 kHz tone with every detected PVC, as shown in the following video:</p>
 
 
 
@@ -63,12 +63,12 @@ https://github.com/user-attachments/assets/612c87d3-5832-4637-a96f-ad16b39368b2
 </p>
 
 
-**When using this resource, please cite the associated study, which is currently under review and is available at:** https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6079809.
+<p align="justify">**When using this resource, please cite the associated study, which is currently under review and is available at:** https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6079809.
 
-How to cite: Argüello-Prada, Erick Javier and Bocanegra Aparicio, Santiago and Robles Bolívar, Arthur Yeray, A hierarchical rule-based algorithm for detecting premature ventricular contractions (PVCs) in the photoplethysmogram. Available at SSRN: https://ssrn.com/abstract=6079809 or http://dx.doi.org/10.2139/ssrn.6079809.
+How to cite: Argüello-Prada, Erick Javier and Bocanegra Aparicio, Santiago and Robles Bolívar, Arthur Yeray, A hierarchical rule-based algorithm for detecting premature ventricular contractions (PVCs) in the photoplethysmogram. Available at SSRN: https://ssrn.com/abstract=6079809 or http://dx.doi.org/10.2139/ssrn.6079809.</p>
 
 # **References**
-[1]	S. Tseng, G. N. Kowlgi y C. V. DeSimone, “Management of premature ventricular complexes in the outpatient setting,” Mayo Clinic Proceedings, vol. 98, no. 7, pp. 1042–1053, julio 2023, doi: https://doi.rog/10.1016/j.mayocp.2023.01.021.
+<p align="justify">[1]	S. Tseng, G. N. Kowlgi y C. V. DeSimone, “Management of premature ventricular complexes in the outpatient setting,” Mayo Clinic Proceedings, vol. 98, no. 7, pp. 1042–1053, julio 2023, doi: https://doi.rog/10.1016/j.mayocp.2023.01.021.
 
 [2]	J. F. Huizar, S. G. Fisher, F. V. Ramsey, K. Kaszala, A. Y. Tan, H. Moore, J. N. Koneru, J. Kron, S. K. Padala, K. A. Ellenbogen y S. N. Singh, “Outcomes of premature ventricular contraction–cardiomyopathy in the veteran population: a secondary analysis of the CHF-STAT study,” Clinical Electrophysiology, vol. 7, no. 3, pp. 380–390, 2021, doi: https://doi.org/10.1016/j.jacep.2020.08.028.
 
@@ -78,7 +78,7 @@ How to cite: Argüello-Prada, Erick Javier and Bocanegra Aparicio, Santiago and 
 
 [5] J. G. Kovoor y A. Thiagalingam, “Smartwatch-induced cardiology referral due to pulse underdetection with premature ventricular complexes,” HeartRhythm Case Reports, vol. 7, no. 9, pp. 585–587, 2021, doi: https://doi.org/10.1016/j.hrcr.2021.05.015.
 
-[6] L. Goldberger, L. A. Amaral, L. Glass, J. M. Hausdorff, P. C. Ivanov, R. G. Mark, T. H. Mietus, G. B. Moody, C.-K. Peng y H. E. Stanley, “PhysioBank, PhysioToolkit, and PhysioNet: components of a new research resource for complex physiologic signals,” Circulation, vol. 101, no. 23, pp. e215–e220, 2000, doi: https://doi.org/10.1161/01.CIR.101.23.e215. 
+[6] L. Goldberger, L. A. Amaral, L. Glass, J. M. Hausdorff, P. C. Ivanov, R. G. Mark, T. H. Mietus, G. B. Moody, C.-K. Peng y H. E. Stanley, “PhysioBank, PhysioToolkit, and PhysioNet: components of a new research resource for complex physiologic signals,” Circulation, vol. 101, no. 23, pp. e215–e220, 2000, doi: https://doi.org/10.1161/01.CIR.101.23.e215.</p> 
 
 
 

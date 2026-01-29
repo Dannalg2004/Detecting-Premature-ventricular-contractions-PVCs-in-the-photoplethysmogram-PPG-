@@ -20,11 +20,7 @@ Please remember to cite the original study [6] when using this dataset.
 # ***Access the codes***
 Here the link of the codes for online detection (MATLAB and Arduino).
 
-<h2>
-  <span style="text-decoration: underline; font-weight: bold;">
-    Offline PVC detection
-  </span>
-</h2>: Before using this code [Alpinista_Simple_4_CVP7_opt](https://drive.google.com/file/d/1BxTrkrCFn-aueQ7k8dVo_Vh4eKqhuFMO/view), you need to upload the PPG and ECG signals of the MIMIC recordings into the MATLAB Workspace. Use the .docx annotation file to identify the beginning and the end of every PPG segment and smooth it by applying a Savitzky-Golay finite impulse response (FIR) filter with a polynomial order of 5 and a frame length of 15. Note that fs = 125 Hz. You’ll see the results printed on MATLAB’s Command Window.
+<u><b>Offline PVC detection</b></u>: Before using this code [Alpinista_Simple_4_CVP7_opt](https://drive.google.com/file/d/1BxTrkrCFn-aueQ7k8dVo_Vh4eKqhuFMO/view), you need to upload the PPG and ECG signals of the MIMIC recordings into the MATLAB Workspace. Use the .docx annotation file to identify the beginning and the end of every PPG segment and smooth it by applying a Savitzky-Golay finite impulse response (FIR) filter with a polynomial order of 5 and a frame length of 15. Note that fs = 125 Hz. You’ll see the results printed on MATLAB’s Command Window.
 
 <u><b>Real-time PVC detection (MATLAB)</b></u>: The following code can provide you with average (every 10 seconds) and instant (every heartbeat) heart rate, also detecting PVCs in real time: [Alpinista_simple_4_CVP7_online](https://drive.google.com/file/d/1YNe157gDxzLewTEy6Oi6uCCtF5CMmNFC/view). This code works in conjunction with an Arduino UNO board and a homemade PPG circuit (see Figure 2). Verify that the COM port and baud rate match those you use to configure and connect the Arduino board [Sketch_sep22a.ino](https://drive.google.com/file/d/1RFf4OijW5zHnQ8XXn5dQ3dpJ2XSBEZ6E/view). You’ll see the results printed on MATLAB’s Command Window.
 

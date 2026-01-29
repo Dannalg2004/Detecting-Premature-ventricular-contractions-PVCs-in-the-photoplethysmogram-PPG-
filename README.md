@@ -1,6 +1,6 @@
-# ***Detecting-Premature-ventricular-contractions-PVCs-in-the-photoplethysmogram-PPG***
+# ***Detecting Premature ventricular contractions (PVCs) in the photoplethysmogram (PPG)***
 
-## ***What is a PVC?***
+# ***What is a PVC?***
 <p align="justify">Premature ventricular contractions (PVCs), also known as premature ventricular complexes or ventricular extrasystoles, are early ventricular contractions due to focal electrical impulses originating from the Purkinje fibers rather than the sinoatrial (SA) node [1]. Depending on their occurrence rate, their clinical relevance ranges from completely innocuous to the development of cardiomyopathy and heart failure [2, 3].</p>
 
 # ***What do PVCs look like?***

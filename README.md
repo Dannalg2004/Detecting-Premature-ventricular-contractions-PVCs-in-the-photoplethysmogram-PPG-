@@ -19,9 +19,9 @@ Please remember to cite the original study [6] when using this dataset.
 
 # ***Access the codes***
 Here the link of the codes for online detection (MATLAB and Arduino).
-Offline PVC detection: Before using this code [Alpinista_Simple_4_CVP7_opt](https://drive.google.com/file/d/1BxTrkrCFn-aueQ7k8dVo_Vh4eKqhuFMO/view), you need to upload the PPG and ECG signals of the MIMIC recordings into the MATLAB Workspace. Use the .docx annotation file to identify the beginning and the end of every PPG segment and smooth it by applying a Savitzky-Golay finite impulse response (FIR) filter with a polynomial order of 5 and a frame length of 15. Note that fs = 125 Hz. You’ll see the results printed on MATLAB’s Command Window.
+<u><b>Offline PVC detection</b></u>: Before using this code [Alpinista_Simple_4_CVP7_opt](https://drive.google.com/file/d/1BxTrkrCFn-aueQ7k8dVo_Vh4eKqhuFMO/view), you need to upload the PPG and ECG signals of the MIMIC recordings into the MATLAB Workspace. Use the .docx annotation file to identify the beginning and the end of every PPG segment and smooth it by applying a Savitzky-Golay finite impulse response (FIR) filter with a polynomial order of 5 and a frame length of 15. Note that fs = 125 Hz. You’ll see the results printed on MATLAB’s Command Window.
 
-Real-time PVC detection (MATLAB): The following code can provide you with average (every 10 seconds) and instant (every heartbeat) heart rate, also detecting PVCs in real time: [Alpinista_simple_4_CVP7_online](https://drive.google.com/file/d/1YNe157gDxzLewTEy6Oi6uCCtF5CMmNFC/view). This code works in conjunction with an Arduino UNO board and a homemade PPG circuit (see Figure 2). Verify that the COM port and baud rate match those you use to configure and connect the Arduino board [Sketch_sep22a.ino](https://drive.google.com/file/d/1RFf4OijW5zHnQ8XXn5dQ3dpJ2XSBEZ6E/view). You’ll see the results printed on MATLAB’s Command Window.
+<u><b>Real-time PVC detection (MATLAB)</b></u>: The following code can provide you with average (every 10 seconds) and instant (every heartbeat) heart rate, also detecting PVCs in real time: [Alpinista_simple_4_CVP7_online](https://drive.google.com/file/d/1YNe157gDxzLewTEy6Oi6uCCtF5CMmNFC/view). This code works in conjunction with an Arduino UNO board and a homemade PPG circuit (see Figure 2). Verify that the COM port and baud rate match those you use to configure and connect the Arduino board [Sketch_sep22a.ino](https://drive.google.com/file/d/1RFf4OijW5zHnQ8XXn5dQ3dpJ2XSBEZ6E/view). You’ll see the results printed on MATLAB’s Command Window.
 
 <p align="center">
   <img width="923" height="519" alt="Circuito_PPG_Mejorado" src="https://github.com/user-attachments/assets/7ae9ca93-f025-4e61-bda5-ecd914bd2a7a" />
@@ -38,7 +38,7 @@ Optimal results can be obtained when utilizing a TCRT1000 reflective optical sen
 </p>
 
 
-Real-time PVC detection (Arduino): This code works in conjunction with an Arduino UNO board and a MAX30102 High-Sensitivity Pulse Oximeter and Heart Rate sensor (see Figure 4) to provide real-time detection of PVCs: [Alpinista_4_CVP3_MAX.ino](https://drive.google.com/file/d/1fdaf9z1fIm2eBkvDZgJxihv-ZNYfrV0c/view).
+<u><b>Real-time PVC detection (Arduino)</b></u>: This code works in conjunction with an Arduino UNO board and a MAX30102 High-Sensitivity Pulse Oximeter and Heart Rate sensor (see Figure 4) to provide real-time detection of PVCs: [Alpinista_4_CVP3_MAX.ino](https://drive.google.com/file/d/1fdaf9z1fIm2eBkvDZgJxihv-ZNYfrV0c/view).
 
 
 <p align="center">
@@ -62,8 +62,9 @@ https://github.com/user-attachments/assets/612c87d3-5832-4637-a96f-ad16b39368b2
 </p>
 
 
-**When using this resource, please cite the associated study, which is currently under review and is available at:** [Enlace del artículo]
-How to cite: [Esto te lo paso después].
+**When using this resource, please cite the associated study, which is currently under review and is available at:** https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6079809.
+
+How to cite: Argüello-Prada, Erick Javier and Bocanegra Aparicio, Santiago and Robles Bolívar, Arthur Yeray, A hierarchical rule-based algorithm for detecting premature ventricular contractions (PVCs) in the photoplethysmogram. Available at SSRN: https://ssrn.com/abstract=6079809 or http://dx.doi.org/10.2139/ssrn.6079809.
 
 # **References**
 [1]	S. Tseng, G. N. Kowlgi y C. V. DeSimone, “Management of premature ventricular complexes in the outpatient setting,” Mayo Clinic Proceedings, vol. 98, no. 7, pp. 1042–1053, julio 2023, doi: https://doi.rog/10.1016/j.mayocp.2023.01.021.

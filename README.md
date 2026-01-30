@@ -12,12 +12,12 @@
   <strong>Figure 1.</strong> <em>The typical appearance of a premature ventricular contraction (PVC) on the electrocardiogram (ECG) and the photoplethysmogram (PPG).</em>
 </p>
 
-# ***Why is it important to detect PVCs in PPG waveforms?***
+## ***Why is it important to detect PVCs in PPG waveforms?***
 <p align="justify">PVCs interrupt diastolic ventricular filling, thereby decreasing stroke volume and cardiac output [4]. Therefore, the corresponding arterial pulse may be too weak to be detected by photoplethysmography (PPG)-based pulse monitors, which are the most commonly owned by the general population. Pulse under-detection can falsely appear as bradycardia, triggering unnecessary healthcare provision and causing anxiety to the patient [1, 5]. Here, we provide an open-source code for detecting PVCs in PPG signals to reduce pseudo-bradycardia alarms. Initially developed for offline PVC detection, our proposed rule-based method has now been adapted to real-time operation.</p>
 
 PVC types 1 and 2 were visually identified in high-quality PPG waveforms of ten selected recordings from the multiparameter intelligent monitoring in intensive care (MIMIC) database using the synchronously recorded electrocardiograms (ECG) [6]. A .docx file with manual annotations identifying the type of PVCs and the corresponding time instants at which they occur in these recordings can be downloaded from here: [Formato Anotaciones CVPs](https://docs.google.com/document/d/19UcAYbughqKzRng29dkVUVR2Kz3p8MBg/edit). Please remember to cite the original study [6] when using this dataset.
 
-# ***Access the codes***
+## ***Access the codes***
 <p align="justify">Here the link of the codes for online detection (MATLAB and Arduino).</p>
 
 <u><b>Offline PVC detection</b></u>: Before using this code [Alpinista_Simple_4_CVP7_opt](https://drive.google.com/file/d/1BxTrkrCFn-aueQ7k8dVo_Vh4eKqhuFMO/view),  you need to upload the PPG and ECG signals of the MIMIC recordings into the MATLAB Workspace. Use the .docx annotation file to identify the beginning and the end of every PPG segment and smooth it by applying a Savitzky-Golay finite impulse response (FIR) filter with a polynomial order of 5 and a frame length of 15. Note that fs = 125 Hz. You’ll see the results printed on MATLAB’s Command Window.
@@ -67,7 +67,7 @@ https://github.com/user-attachments/assets/612c87d3-5832-4637-a96f-ad16b39368b2
 
 **How to cite:** <p align="justify"> Argüello-Prada, Erick Javier and Bocanegra Aparicio, Santiago and Robles Bolívar, Arthur Yeray, A hierarchical rule-based algorithm for detecting premature ventricular contractions (PVCs) in the photoplethysmogram. Available at SSRN: https://ssrn.com/abstract=6079809 or http://dx.doi.org/10.2139/ssrn.6079809.</p>
 
-# **References**
+## **References**
 [1] S. Tseng, G. N. Kowlgi y C. V. DeSimone, “Management of premature ventricular complexes in the outpatient setting,” Mayo Clinic Proceedings, vol. 98, no. 7, pp. 1042–1053, julio 2023, doi: https://doi.rog/10.1016/j.mayocp.2023.01.021.
 
 [2]	J. F. Huizar, S. G. Fisher, F. V. Ramsey, K. Kaszala, A. Y. Tan, H. Moore, J. N. Koneru, J. Kron, S. K. Padala, K. A. Ellenbogen y S. N. Singh, “Outcomes of premature ventricular contraction–cardiomyopathy in the veteran population: a secondary analysis of the CHF-STAT study,” Clinical Electrophysiology, vol. 7, no. 3, pp. 380–390, 2021, doi: https://doi.org/10.1016/j.jacep.2020.08.028.

@@ -13,7 +13,7 @@
 </p>
 
 ## ***Why is it important to detect PVCs in PPG waveforms?***
-<p align="justify"> The algorithm was adapted from the mountaineer's method for peak detection (MMPD), introduced by Argüello-Prada [6].PVCs interrupt diastolic ventricular filling, thereby decreasing stroke volume and cardiac output [4]. Therefore, the corresponding arterial pulse may be too weak to be detected by photoplethysmography (PPG)-based pulse monitors, which are the most commonly owned by the general population. Pulse under-detection can falsely appear as bradycardia, triggering unnecessary healthcare provision and causing anxiety to the patient [1, 5]. Here, we provide an open-source code for detecting PVCs in PPG signals to reduce pseudo-bradycardia alarms. Initially developed for offline PVC detection, our proposed rule-based method has now been adapted to real-time operation.</p>
+<p align="justify"> The algorithm was adapted from the mountaineer's method for peak detection (MMPD), introduced by Argüello-Prada [6]. PVCs interrupt diastolic ventricular filling, thereby decreasing stroke volume and cardiac output [4]. Therefore, the corresponding arterial pulse may be too weak to be detected by photoplethysmography (PPG)-based pulse monitors, which are the most commonly owned by the general population. Pulse under-detection can falsely appear as bradycardia, triggering unnecessary healthcare provision and causing anxiety to the patient [1, 5]. Here, we provide an open-source code for detecting PVCs in PPG signals to reduce pseudo-bradycardia alarms. Initially developed for offline PVC detection, our proposed rule-based method has now been adapted to real-time operation.</p>
 
 PVC types 1 and 2 were visually identified in high-quality PPG waveforms of ten selected recordings from the multiparameter intelligent monitoring in intensive care (MIMIC) database using the synchronously recorded electrocardiograms (ECG) [6]. A .docx file with manual annotations identifying the type of PVCs and the corresponding time instants at which they occur in these recordings can be downloaded from here: [Formato Anotaciones CVPs](https://usceduco7466-my.sharepoint.com/:w:/g/personal/danna_lopez02_usc_edu_co/IQAomQ3ZY4DtQJaYJ02xLNuoAX9ghkyRaS9Ej9k8d-u3Hco?e=m1mPip). Please remember to cite the original study [6] when using this dataset.
 
@@ -63,9 +63,9 @@ https://github.com/user-attachments/assets/612c87d3-5832-4637-a96f-ad16b39368b2
 </p>
 
 
-**<p align="justify">When using this resource, please cite the associated study, which is currently under review and is available at:** https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6079809.</p>
+**<p align="justify">When using this resource, please cite the associated study, which was published by Elsevier Ltd and the Biomedical Signal Processing and Control journal, and is available at: https://www.sciencedirect.com/science/article/pii/S1746809426011924.</p>
 
-**How to cite:** <p align="justify"> Argüello-Prada, Erick Javier and Bocanegra Aparicio, Santiago and Robles Bolívar, Arthur Yeray, A hierarchical rule-based algorithm for detecting premature ventricular contractions (PVCs) in the photoplethysmogram. Available at SSRN: https://ssrn.com/abstract=6079809 or http://dx.doi.org/10.2139/ssrn.6079809.</p>
+**How to cite:** <p align="justify"> E. J. Argüello-Prada, S. Bocanegra Aparicio, and A. Y. Robles Bolívar, “A hierarchical rule-based algorithm for detecting premature ventricular contractions (PVCs) in the photoplethysmogram,” Biomedical Signal Processing and Control, vol. 123, pt. B, Art. no. 110638, Sep. 2026, doi: https://doi.org/10.1016/j.bspc.2026.110638. </p>
 
 ## **References**
 [1] S. Tseng, G. N. Kowlgi y C. V. DeSimone, “Management of premature ventricular complexes in the outpatient setting,” Mayo Clinic Proceedings, vol. 98, no. 7, pp. 1042–1053, julio 2023, doi: https://doi.rog/10.1016/j.mayocp.2023.01.021.
@@ -78,7 +78,9 @@ https://github.com/user-attachments/assets/612c87d3-5832-4637-a96f-ad16b39368b2
 
 [5] J. G. Kovoor y A. Thiagalingam, “Smartwatch-induced cardiology referral due to pulse underdetection with premature ventricular complexes,” HeartRhythm Case Reports, vol. 7, no. 9, pp. 585–587, 2021, doi: https://doi.org/10.1016/j.hrcr.2021.05.015.
 
-[6] L. Goldberger, L. A. Amaral, L. Glass, J. M. Hausdorff, P. C. Ivanov, R. G. Mark, T. H. Mietus, G. B. Moody, C.-K. Peng y H. E. Stanley, “PhysioBank, PhysioToolkit, and PhysioNet: components of a new research resource for complex physiologic signals,” Circulation, vol. 101, no. 23, pp. e215–e220, 2000, doi: https://doi.org/10.1161/01.CIR.101.23.e215.</p> 
+[6] E.J. Argüello-Prada, The mountaineer’s method for peak detection in photoplethysmographic signals, Rev. Fac. Ing. Univ. Antioquia 90 (2019) 9–17, https://doi.org/10.17533/udea.redin.n90a06.</p> 
+
+[7] L. Goldberger, L. A. Amaral, L. Glass, J. M. Hausdorff, P. C. Ivanov, R. G. Mark, T. H. Mietus, G. B. Moody, C.-K. Peng y H. E. Stanley, “PhysioBank, PhysioToolkit, and PhysioNet: components of a new research resource for complex physiologic signals,” Circulation, vol. 101, no. 23, pp. e215–e220, 2000, doi: https://doi.org/10.1161/01.CIR.101.23.e215.</p> 
 
 
 

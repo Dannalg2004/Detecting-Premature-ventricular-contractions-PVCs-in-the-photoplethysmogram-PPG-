@@ -63,7 +63,7 @@ https://github.com/user-attachments/assets/612c87d3-5832-4637-a96f-ad16b39368b2
 </p>
 
 
-**<p align="justify">When using this resource, please cite the associated study, which was published by Elsevier Ltd and the Biomedical Signal Processing and Control journal, and is available at: https://www.sciencedirect.com/science/article/pii/S1746809426011924.</p>
+**<p align="justify">When using this resource, please cite the associated study, which was published by Elsevier Ltd and the Biomedical Signal Processing and Control journal, and is available at: https://www.sciencedirect.com/science/article/pii/S1746809426011924.</p>**
 
 **How to cite:** <p align="justify"> E. J. Argüello-Prada, S. Bocanegra Aparicio, and A. Y. Robles Bolívar, “A hierarchical rule-based algorithm for detecting premature ventricular contractions (PVCs) in the photoplethysmogram,” Biomedical Signal Processing and Control, vol. 123, pt. B, Art. no. 110638, Sep. 2026, doi: https://doi.org/10.1016/j.bspc.2026.110638. </p>
 
